@@ -1,369 +1,387 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Menú digital de la Cafetería CERTUS con productos, precios y disponibilidad.">
-  <title>Menú Cafetería CERTUS</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menú digital de la Cafetería CERTUS con productos, precios y disponibilidad.">
+    <title>Menú Cafetería CERTUS</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 
-  <header class="site-header">
-    <div class="container header-content">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio del Menú Cafetería CERTUS">
-        <span class="brand-mark" aria-hidden="true">C</span>
-        <span class="brand-text">
-          <strong>CERTUS</strong>
-          <small>Cafetería estudiantil</small>
-        </span>
-      </a>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio del Menú Cafetería CERTUS">
+                <span class="brand-mark" aria-hidden="true">C</span>
+                <span class="brand-text">
+                    <strong>CERTUS</strong>
+                    <small>Cafetería estudiantil</small>
+                </span>
+            </a>
 
-      <div class="header-status" aria-label="Estado del servicio">
-        <span class="status-dot" aria-hidden="true"></span>
-        Menú actualizado
-      </div>
-    </div>
-  </header>
-
-  <main id="contenido-principal">
-    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Menú digital · Equipo 4</p>
-          <h1 id="titulo-principal">Tu pausa favorita, sin hacer fila de más</h1>
-          <p class="hero-description">
-            Consulta los productos, precios y disponibilidad de la cafetería desde tu celular antes de acercarte a la caja.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#menu">Ver el menú</a>
-            <a class="button button-secondary" href="#como-funciona">¿Cómo funciona?</a>
-          </div>
-
-          <ul class="hero-benefits" aria-label="Beneficios del menú digital">
-            <li><span aria-hidden="true">✓</span> Precios en soles</li>
-            <li><span aria-hidden="true">✓</span> Stock visible</li>
-            <li><span aria-hidden="true">✓</span> Acceso rápido</li>
-          </ul>
-        </div>
-
-        <aside class="qr-card" aria-label="Acceso al menú mediante código QR">
-          <div class="qr-placeholder" role="img" aria-label="Espacio reservado para el código QR oficial">
-            <span>QR</span>
-          </div>
-          <div>
-            <p class="qr-title">Escanea y consulta</p>
-            <p class="qr-text">Coloca aquí el código QR cuando el sitio esté publicado.</p>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="info-strip" aria-label="Información de atención">
-      <div class="container info-grid">
-        <div class="info-item">
-          <span class="info-icon" aria-hidden="true">◷</span>
-          <div>
-            <strong>Horario</strong>
-            <span>Lunes a viernes · 7:30 a. m. a 8:30 p. m.</span>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <span class="info-icon" aria-hidden="true">◎</span>
-          <div>
-            <strong>Ubicación</strong>
-            <span>Zona de cafetería del instituto</span>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <span class="info-icon" aria-hidden="true">S/</span>
-          <div>
-            <strong>Precios claros</strong>
-            <span>Montos redondeados a S/ 0.50</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <nav class="category-nav" aria-label="Categorías del menú">
-      <div class="container category-links">
-        <a href="#bebidas">☕ Bebidas</a>
-        <a href="#sandwiches">🥪 Sándwiches</a>
-        <a href="#snacks">🍪 Snacks</a>
-        <a href="#combos">✨ Combos</a>
-      </div>
-    </nav>
-
-    <section class="menu-section" id="menu" aria-labelledby="titulo-menu">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Elige tu opción</p>
-            <h2 id="titulo-menu">Menú del día</h2>
-          </div>
-          <p>La disponibilidad puede cambiar durante la jornada.</p>
-        </div>
-
-        <section class="menu-category" id="bebidas" aria-labelledby="titulo-bebidas">
-          <div class="category-heading">
-            <div class="category-icon" aria-hidden="true">☕</div>
-            <div>
-              <h3 id="titulo-bebidas">Bebidas</h3>
-              <p>Opciones calientes para acompañar tu día.</p>
+            <div class="header-status" aria-label="Estado del servicio">
+                <span class="status-dot" aria-hidden="true"></span>
+                Menú actualizado
             </div>
-          </div>
+        </div>
+    </header>
 
-          <div class="product-grid">
-            <article class="product-card">
-              <div class="product-topline">
-                <span class="product-category">Bebidas</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Café Americano</h4>
-              <p>Café de sabor intenso, servido caliente.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 3.00</span>
-                <span class="product-code">B01</span>
-              </div>
-            </article>
+    <main id="contenido-principal">
+        <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Menú digital · Equipo 4</p>
+                    <h1 id="titulo-principal">Tu pausa favorita, sin hacer fila de más</h1>
 
-            <article class="product-card">
-              <div class="product-topline">
-                <span class="product-category">Bebidas</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Chocolate caliente</h4>
-              <p>Bebida cremosa preparada con leche y cacao.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 4.00</span>
-                <span class="product-code">B02</span>
-              </div>
-            </article>
+                    <p class="hero-description">
+                        Consulta los productos, precios y disponibilidad de la cafetería
+                        desde tu celular antes de acercarte a la caja.
+                    </p>
 
-            <article class="product-card">
-              <div class="product-topline">
-                <span class="product-category">Bebidas</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Infusión natural</h4>
-              <p>Manzanilla, anís o hierba luisa, según elección.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 2.50</span>
-                <span class="product-code">B03</span>
-              </div>
-            </article>
-          </div>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#menu">Ver el menú</a>
+                        <a class="button button-secondary" href="#como-funciona">
+                            ¿Cómo funciona?
+                        </a>
+                    </div>
+
+                    <ul class="hero-benefits" aria-label="Beneficios del menú digital">
+                        <li><span aria-hidden="true">✓</span> Precios en soles</li>
+                        <li><span aria-hidden="true">✓</span> Stock visible</li>
+                        <li><span aria-hidden="true">✓</span> Acceso rápido</li>
+                    </ul>
+                </div>
+
+                <aside class="qr-card" aria-label="Acceso al menú mediante código QR">
+                    <div class="qr-placeholder" role="img" aria-label="Espacio reservado para el código QR oficial">
+                        <span>QR</span>
+                    </div>
+
+                    <div>
+                        <p class="qr-title">Escanea y consulta</p>
+                        <p class="qr-text">
+                            Coloca aquí el código QR cuando el sitio esté publicado.
+                        </p>
+                    </div>
+                </aside>
+            </div>
         </section>
 
-        <section class="menu-category" id="sandwiches" aria-labelledby="titulo-sandwiches">
-          <div class="category-heading">
-            <div class="category-icon" aria-hidden="true">🥪</div>
-            <div>
-              <h3 id="titulo-sandwiches">Sándwiches</h3>
-              <p>Preparaciones prácticas para una pausa completa.</p>
+        <section class="info-strip" aria-label="Información de atención">
+            <div class="container info-grid">
+                <div class="info-item">
+                    <span class="info-icon" aria-hidden="true">◷</span>
+                    <div>
+                        <strong>Horario</strong>
+                        <span>Lunes a viernes · 7:30 a. m. a 8:30 p. m.</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon" aria-hidden="true">◎</span>
+                    <div>
+                        <strong>Ubicación</strong>
+                        <span>Zona de cafetería del instituto</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon" aria-hidden="true">S/</span>
+                    <div>
+                        <strong>Precios claros</strong>
+                        <span>Montos redondeados a S/ 0.50</span>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="product-grid">
-            <article class="product-card">
-              <div class="product-topline">
-                <span class="product-category">Sándwiches</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Sándwich mixto</h4>
-              <p>Pan tostado con jamón y queso fundido.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 4.50</span>
-                <span class="product-code">S01</span>
-              </div>
-            </article>
-
-            <article class="product-card">
-              <div class="product-topline">
-                <span class="product-category">Sándwiches</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Sándwich de pollo</h4>
-              <p>Pollo deshilachado, lechuga y crema de la casa.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 6.00</span>
-                <span class="product-code">S02</span>
-              </div>
-            </article>
-
-            <article class="product-card unavailable-card">
-              <div class="product-topline">
-                <span class="product-category">Sándwiches</span>
-                <span class="availability sold-out">Agotado</span>
-              </div>
-              <h4>Sándwich vegetariano</h4>
-              <p>Queso, tomate, lechuga y palta en pan integral.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 5.50</span>
-                <span class="product-code">S03</span>
-              </div>
-            </article>
-          </div>
         </section>
 
-        <section class="menu-category" id="snacks" aria-labelledby="titulo-snacks">
-          <div class="category-heading">
-            <div class="category-icon" aria-hidden="true">🍪</div>
-            <div>
-              <h3 id="titulo-snacks">Snacks</h3>
-              <p>Alternativas ligeras para recargar energía.</p>
+        <nav class="category-nav" aria-label="Categorías del menú">
+            <div class="container category-links">
+                <a href="#bebidas">☕ Bebidas</a>
+                <a href="#sandwiches">🥪 Sándwiches</a>
+                <a href="#snacks">🍪 Snacks</a>
+                <a href="#combos">✨ Combos</a>
             </div>
-          </div>
+        </nav>
 
-          <div class="product-grid">
-            <article class="product-card unavailable-card">
-              <div class="product-topline">
-                <span class="product-category">Snacks</span>
-                <span class="availability sold-out">Agotado</span>
-              </div>
-              <h4>Galleta de avena</h4>
-              <p>Galleta horneada con avena y pasas.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 1.50</span>
-                <span class="product-code">K01</span>
-              </div>
-            </article>
+        <section class="menu-section" id="menu" aria-labelledby="titulo-menu">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Elige tu opción</p>
+                        <h2 id="titulo-menu">Menú del día</h2>
+                    </div>
 
-            <article class="product-card">
-              <div class="product-topline">
-                <span class="product-category">Snacks</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Barra de cereal</h4>
-              <p>Mezcla crocante de cereales y miel.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 2.50</span>
-                <span class="product-code">K02</span>
-              </div>
-            </article>
+                    <p>La disponibilidad puede cambiar durante la jornada.</p>
+                </div>
 
-            <article class="product-card">
-              <div class="product-topline">
-                <span class="product-category">Snacks</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Fruta de estación</h4>
-              <p>Una pieza de fruta fresca seleccionada del día.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 2.00</span>
-                <span class="product-code">K03</span>
-              </div>
-            </article>
-          </div>
+                <section class="menu-category" id="bebidas" aria-labelledby="titulo-bebidas">
+                    <div class="category-heading">
+                        <div class="category-icon" aria-hidden="true">☕</div>
+                        <div>
+                            <h3 id="titulo-bebidas">Bebidas</h3>
+                            <p>Opciones calientes para acompañar tu día.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="product-category">Bebidas</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Café Americano</h4>
+                            <p>Café de sabor intenso, servido caliente.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 3.00</span>
+                                <span class="product-code">B01</span>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="product-category">Bebidas</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Chocolate caliente</h4>
+                            <p>Bebida cremosa preparada con leche y cacao.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 4.00</span>
+                                <span class="product-code">B02</span>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="product-category">Bebidas</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Infusión natural</h4>
+                            <p>Manzanilla, anís o hierba luisa, según elección.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 2.50</span>
+                                <span class="product-code">B03</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="menu-category" id="sandwiches" aria-labelledby="titulo-sandwiches">
+                    <div class="category-heading">
+                        <div class="category-icon" aria-hidden="true">🥪</div>
+                        <div>
+                            <h3 id="titulo-sandwiches">Sándwiches</h3>
+                            <p>Preparaciones prácticas para una pausa completa.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="product-category">Sándwiches</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Sándwich mixto</h4>
+                            <p>Pan tostado con jamón y queso fundido.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 4.50</span>
+                                <span class="product-code">S01</span>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="product-category">Sándwiches</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Sándwich de pollo</h4>
+                            <p>Pollo deshilachado, lechuga y crema de la casa.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 6.00</span>
+                                <span class="product-code">S02</span>
+                            </div>
+                        </article>
+
+                        <article class="product-card unavailable-card">
+                            <div class="product-topline">
+                                <span class="product-category">Sándwiches</span>
+                                <span class="availability sold-out">Agotado</span>
+                            </div>
+                            <h4>Sándwich vegetariano</h4>
+                            <p>Queso, tomate, lechuga y palta en pan integral.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 5.50</span>
+                                <span class="product-code">S03</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="menu-category" id="snacks" aria-labelledby="titulo-snacks">
+                    <div class="category-heading">
+                        <div class="category-icon" aria-hidden="true">🍪</div>
+                        <div>
+                            <h3 id="titulo-snacks">Snacks</h3>
+                            <p>Alternativas ligeras para recargar energía.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <article class="product-card unavailable-card">
+                            <div class="product-topline">
+                                <span class="product-category">Snacks</span>
+                                <span class="availability sold-out">Agotado</span>
+                            </div>
+                            <h4>Galleta de avena</h4>
+                            <p>Galleta horneada con avena y pasas.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 1.50</span>
+                                <span class="product-code">K01</span>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="product-category">Snacks</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Barra de cereal</h4>
+                            <p>Mezcla crocante de cereales y miel.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 2.50</span>
+                                <span class="product-code">K02</span>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="product-category">Snacks</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Fruta de estación</h4>
+                            <p>Una pieza de fruta fresca seleccionada del día.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 2.00</span>
+                                <span class="product-code">K03</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="menu-category" id="combos" aria-labelledby="titulo-combos">
+                    <div class="category-heading">
+                        <div class="category-icon category-icon-accent" aria-hidden="true">
+                            ✨
+                        </div>
+                        <div>
+                            <h3 id="titulo-combos">Combos económicos</h3>
+                            <p>Combinaciones pensadas para ahorrar.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <article class="product-card featured-card">
+                            <span class="featured-label">Recomendado</span>
+                            <div class="product-topline">
+                                <span class="product-category">Combos</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Combo Clásico</h4>
+                            <p>Sándwich mixto más una infusión natural.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 6.50</span>
+                                <span class="product-code">C01</span>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="product-category">Combos</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Combo Energía</h4>
+                            <p>Sándwich de pollo más café americano.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 7.50</span>
+                                <span class="product-code">C02</span>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-topline">
+                                <span class="product-category">Combos</span>
+                                <span class="availability available">Disponible</span>
+                            </div>
+                            <h4>Combo Ligero</h4>
+                            <p>Fruta de estación más una infusión natural.</p>
+                            <div class="product-footer">
+                                <span class="price"><small>S/</small> 5.00</span>
+                                <span class="product-code">C03</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
         </section>
 
-        <section class="menu-category" id="combos" aria-labelledby="titulo-combos">
-          <div class="category-heading">
-            <div class="category-icon category-icon-accent" aria-hidden="true">✨</div>
-            <div>
-              <h3 id="titulo-combos">Combos económicos</h3>
-              <p>Combinaciones pensadas para ahorrar.</p>
+        <section class="how-it-works" id="como-funciona" aria-labelledby="titulo-funcionamiento">
+            <div class="container">
+                <div class="section-heading centered-heading">
+                    <div>
+                        <p class="eyebrow">Fácil y rápido</p>
+                        <h2 id="titulo-funcionamiento">¿Cómo funciona?</h2>
+                    </div>
+                </div>
+
+                <ol class="steps">
+                    <li>
+                        <span class="step-number">1</span>
+                        <h3>Escanea</h3>
+                        <p>Usa la cámara de tu celular para abrir el enlace del código QR.</p>
+                    </li>
+
+                    <li>
+                        <span class="step-number">2</span>
+                        <h3>Consulta</h3>
+                        <p>Revisa categorías, precios y productos disponibles.</p>
+                    </li>
+
+                    <li>
+                        <span class="step-number">3</span>
+                        <h3>Elige</h3>
+                        <p>Decide tu pedido antes de acercarte a la caja.</p>
+                    </li>
+                </ol>
             </div>
-          </div>
-
-          <div class="product-grid">
-            <article class="product-card featured-card">
-              <span class="featured-label">Recomendado</span>
-              <div class="product-topline">
-                <span class="product-category">Combos</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Combo Clásico</h4>
-              <p>Sándwich mixto más una infusión natural.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 6.50</span>
-                <span class="product-code">C01</span>
-              </div>
-            </article>
-
-            <article class="product-card">
-              <div class="product-topline">
-                <span class="product-category">Combos</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Combo Energía</h4>
-              <p>Sándwich de pollo más café americano.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 7.50</span>
-                <span class="product-code">C02</span>
-              </div>
-            </article>
-
-            <article class="product-card">
-              <div class="product-topline">
-                <span class="product-category">Combos</span>
-                <span class="availability available">Disponible</span>
-              </div>
-              <h4>Combo Ligero</h4>
-              <p>Fruta de estación más una infusión natural.</p>
-              <div class="product-footer">
-                <span class="price"><small>S/</small> 5.00</span>
-                <span class="product-code">C03</span>
-              </div>
-            </article>
-          </div>
         </section>
-      </div>
-    </section>
+    </main>
 
-    <section class="how-it-works" id="como-funciona" aria-labelledby="titulo-funcionamiento">
-      <div class="container">
-        <div class="section-heading centered-heading">
-          <div>
-            <p class="eyebrow">Fácil y rápido</p>
-            <h2 id="titulo-funcionamiento">¿Cómo funciona?</h2>
-          </div>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="brand footer-brand" href="#inicio" aria-label="Volver al inicio">
+                    <span class="brand-mark" aria-hidden="true">C</span>
+                    <span class="brand-text">
+                        <strong>CERTUS</strong>
+                        <small>Menú digital de cafetería</small>
+                    </span>
+                </a>
+
+                <p class="footer-note">
+                    Los precios y la disponibilidad están sujetos a actualización.
+                </p>
+            </div>
+
+            <div class="footer-project">
+                <strong>Proyecto académico · Equipo 4</strong>
+                <span>Diseño y Desarrollo de Software</span>
+                <span>Instituto CERTUS · 2026</span>
+            </div>
         </div>
-
-        <ol class="steps">
-          <li>
-            <span class="step-number">1</span>
-            <h3>Escanea</h3>
-            <p>Usa la cámara de tu celular para abrir el enlace del código QR.</p>
-          </li>
-          <li>
-            <span class="step-number">2</span>
-            <h3>Consulta</h3>
-            <p>Revisa categorías, precios y productos disponibles.</p>
-          </li>
-          <li>
-            <span class="step-number">3</span>
-            <h3>Elige</h3>
-            <p>Decide tu pedido antes de acercarte a la caja.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="#inicio" aria-label="Volver al inicio">
-          <span class="brand-mark" aria-hidden="true">C</span>
-          <span class="brand-text">
-            <strong>CERTUS</strong>
-            <small>Menú digital de cafetería</small>
-          </span>
-        </a>
-        <p class="footer-note">Los precios y la disponibilidad están sujetos a actualización.</p>
-      </div>
-
-      <div class="footer-project">
-        <strong>Proyecto académico · Equipo 4</strong>
-        <span>Diseño y Desarrollo de Software</span>
-        <span>Instituto CERTUS · 2026</span>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
+
 </html>
